@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Poppins';
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(120deg,#153677,#4e085f);
+    padding: 10px;
+}
+.todo{
+    background-color:#fff;
+    width: 100%;
+    max-width: 540px;
+    border-radius:15px ;
+    margin: 100px auto 25px;
+    padding: 40px 30px 60px;
+
+}
+.todo img{
+    width:30px;
+  position: relative;
+  left: 160px;
+  bottom: 50px;
+  margin-left: 20px;
+}
+
+.todo h2{
+    align-items: center;
+    display: flex;
+    margin-bottom: 12px;
+    
+    color: #002765;
+
+}
+.todo span{
+ color: rgb(253, 75, 75);
+ position: relative;
+ left: 10px;
+}
+.row{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 12px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+input{
+    flex: 5;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 8px;
+    font-weight: 15px;
+
+}
+button{
+    border: none;
+    outline: none;
+    padding: 9px 30px;
+    color: #edeef0;
+    background-color:rgb(253, 75, 75);
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: rgb(247, 49, 0);
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 52px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+ul li::before{
+    content: " ";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius:50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+   top: 12px;
+   left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);   
+}
+ul li spin{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width:40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li spin:hover{
+    color: crimson;
+}
+@media all (max-width=600px) {
+    .todo{
+        
+        width:-100px;
+    
+    }
+    .todo h2{
+        align-items: center;
+        margin-bottom: 12px;
+        
+        color: #2a9e07;
+    
+    }
+    .row{
+        align-items: center;
+
+}
+}
+
+
