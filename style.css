@@ -115,7 +115,7 @@ ul li spin{
 ul li spin:hover{
     color: crimson;
 }
-@media all (max-width=600px) {
+@media all (max-width=350px) {
     .todo{
         
         width:-100px;
